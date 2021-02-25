@@ -104,11 +104,14 @@ void pop() {
 void size() {
     stackNode* temp = top_;
     int size = 0;
-
-    while(temp->link != NULL){
-        temp = temp->link;
-        size++;
+    if (temp != NULL){
+        while(temp != NULL){
+        
+            temp = temp->link;
+            size++;
+        }
     }
+    
 
     printf("%d\n", size);
 }
