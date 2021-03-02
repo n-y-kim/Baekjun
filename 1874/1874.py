@@ -8,39 +8,25 @@ for i in range(0,n):
     x = int(stdin.readline())
     arrayWanted.append(x)
 
-print(arrayWanted)
+#print(arrayWanted)
 i = 0
-j = 0
-popNum = arrayWanted[0]
+j = 1
 array.append(j)
 plusMinus.append("+")
+j+=1
 
-while True :
-    if len(array)!=0 and popNum == array[i] :
-        print("first")
+while i != n:
+    if len(array)!=0 and array[-1] == arrayWanted[i]:
         array.pop(-1)
         plusMinus.append("-")
-        
-        if len(array) == 0 and i == n-1: exit()
-        elif len(array) == 0: popNum += 1
-        else: popNum = array[-1]
-
-        print("i: %d popNum: %d" %(i,popNum))
-        i-=1
-    else:
-        if j > n and len(array) != 0:
-            print("NO")
-            exit()
-        elif j > n and len(array) == 0:
-            break
-        else: # j != arrayWanted[i]
-            print("second")
-            print("i: %d j: %d" %(i,j))
-            j+=1
-            i+=1
-            array.append(j)
-            plusMinus.append("+")
-            popNum = array[-1]
+        i+=1
+    elif j == n+1:
+        print("NO")
+        exit()
+    elif len(array) == 0 or array[-1] != arrayWanted[i]:
+        array.append(j)
+        plusMinus.append("+")
+        j+=1
 
 for _ in plusMinus:
     print(_)
