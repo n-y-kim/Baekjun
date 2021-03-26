@@ -5,3 +5,5 @@
 <br><br>
 <strong>3/24:</strong> 11866.py used list. wrote better code for printing result + <strong>got better time complexity</strong> However 1158.py seems better. 
 <br>
+<strong>3/26:</strong> 1271.py Got <strong><u>overflow error</u></strong>. The number n, m had big limits that made overflow. Used '//' to solve it. <strong>// returns integer, not float!</strong>
+<br>
