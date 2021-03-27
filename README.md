@@ -8,3 +8,6 @@
 <pre><strong>3/26:</strong> 1271.py Got <strong><u>overflow error</u></strong>. The number n, m had big limits that made overflow.<br>Used '//' to solve it. <strong>// returns integer, not float!</strong>
 <br>
       10816.py <strong>TIME ERROR AGAIN‼️</strong> needed to use Dictionary or Counter</pre>
+<br>
+<pre><strong>3/27:</strong> 1009.py got wrong idea and took forever.</pre>
+<br>
