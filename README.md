@@ -11,3 +11,4 @@
 <br>
 <pre><strong>3/27:</strong> 1009.py got wrong idea and took forever.</pre>
 <br>
+<pre><strong>3/28:</strong> 1406.py had problem with time complexity because of list.</pre>
