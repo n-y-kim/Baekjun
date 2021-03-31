@@ -18,7 +18,7 @@ front *= 100
 minNum = 0
 for i in range(99):
     temp = front + i
-    if temp != int(N) and temp%F == 0: 
+    if temp%F == 0: 
         minNum = i
         break
 
