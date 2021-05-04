@@ -1,9 +1,3 @@
-#  다른 모든 지원자와 비교했을 때 
-#  서류심사 성적과 면접시험 성적 중 
-#  적어도 하나가 다른 지원자보다 떨어지지 않는 자만 선발한다는 원칙을 세웠다. 
-#  즉, 어떤 지원자 A의 성적이 다른 어떤 지원자 B의 성적에 비해 
-#  서류 심사 결과와 면접 성적이 모두 떨어진다면 A는 결코 선발되지 않는다.
-
 # 지원자가 모두 한 장소에 모였다고 생각해 볼게요.
 
 # 그 중에 한 지원자의 입장이 되어, 다른 지원자들의 면접, 서류 점수를 봅니다.
@@ -16,16 +10,26 @@
 
 from sys import stdin
 
-a = [[],[]]
-b = []
-
+a = []
+passed = []
 t = int(stdin.readline())
+
 for i in range(0, t):
+    passed.append(1)
     n = int(stdin.readline())
     for j in range(0,n):
-        x, y = list(map(int, stdin.readline().split()))
-        a.append(x)
-        b.append(y)
+        ranks = list(map(int, stdin.readline().split()))
+        a.append(ranks)
+    a.sort();
+    
+    min = a[0][1]
 
-print(a)
-print(b)
+    for j in range(1, n):
+        if a[j][1] < min:
+            passed[i] += 1
+            min = a[j][1]
+
+    del a[0:]
+
+for i in range(0,t):
+    print(passed[i])
