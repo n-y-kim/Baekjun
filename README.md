@@ -14,3 +14,5 @@
 <pre><strong>3/28:</strong> 1406.py had problem with time complexity because of list.</pre>
 <br>
 <pre><strong>3/30:</strong> <del>1075 incorrect. Why..?</del> -> misunderstanding</pre>
+<br>
+<pre><strong>7/12:</strong> 2156 explaination blog: <link href= https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=occidere&logNo=220791788953> https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=occidere&logNo=220791788953</link></pre>
